@@ -38,7 +38,7 @@ For update (Update), one can do:
   'detachedsoul'
  ];
 
- $update = DB::getInstance()->update('post', 'SET title = ?', 'WHERE author = ?', ...$params);
+ $update = DB::getInstance()->update('post', 'title = ?', 'WHERE author = ?', ...$params);
 ```
 
 For delete (Delete), one can do:
