@@ -1,12 +1,10 @@
 # php-oop-crud
 
--CRUD functionlity using PHP's OOP.
+## CRUD functionlity using PHP's OOP
 
---Edit your database credentials accordingly in the Config class.
+### Edit your database credentials accordingly in the Config class
 
-```html
-<h2>For insert <strong>(Create)</strong>, one can do:</h2>
-```
+For insert (Create), one can do:
 
 ```php
 $params = array(
@@ -18,9 +16,7 @@ $params = array(
 $insert = DB::getInstance()->insert('post', ['title', 'author', 'content'], ...$params);
 ```
 
-```html
-<h2>For select <strong>(Read)</strong>, one can do:</h2>
-```
+For select (Read), one can do:
 
 ```php
  $author = "detachedsoul";
@@ -34,9 +30,7 @@ OR
  $select = DB::getInstance()->select('*', 'posts');
 ```
 
-```html
-<h2>For update <strong>(Update)</strong>, one can do:</h2>
-```
+For update (Update), one can do:
 
 ```php
  $params = [
@@ -47,9 +41,7 @@ OR
  $update = DB::getInstance()->update('post', 'SET title = ?', 'WHERE author = ?', ...$params);
 ```
 
-```html
-<h2>For delete <strong>(Delete)</strong>, one can do:</h2>
-```
+For delete (Delete), one can do:
 
 ```php
  $id = 2;
